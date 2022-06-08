@@ -84,6 +84,7 @@ class ResNet_Trainer():
                 correct += (pred == targets).sum()
                 total += pred.size(0)
         test_time = time.time() - start_time
-        print('Test ACC: {:.5f}'.format(correct/total))
-        print('Test Time: {:.3f}s'.format(test_time))
+        # print('Test ACC: {:.5f}'.format(correct/total))
+        # print('Test Time: {:.3f}s'.format(test_time))
         # print('Finished testing.')
+        print(f'     | Test Time: {test_time:.3f}s | Test ACC: {correct/total:.6f} | ')
